@@ -5,12 +5,13 @@ import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
 
 import { MyApp } from "./app.component";
+import {SimpleModalComponent} from "../pages/home/simple-modal.component";
 
 @NgModule({
-  declarations: [MyApp],
+  declarations: [MyApp, SimpleModalComponent],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp],
+  entryComponents: [MyApp, SimpleModalComponent],
   providers: [
     StatusBar,
     SplashScreen,

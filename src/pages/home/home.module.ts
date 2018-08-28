@@ -1,11 +1,10 @@
 import { NgModule } from "@angular/core";
 import { IonicPageModule } from "ionic-angular";
 import { HomePage } from "./home";
-import { SimpleModalComponent } from "./simple-modal.component";
 
 @NgModule({
-  declarations: [HomePage, SimpleModalComponent],
-  entryComponents: [SimpleModalComponent],
+  declarations: [HomePage],
+  entryComponents: [],
   imports: [IonicPageModule.forChild(HomePage)]
 })
 export class HomePageModule {}
