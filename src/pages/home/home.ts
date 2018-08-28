@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { IonicPage, ModalController } from "ionic-angular";
+import { SimpleModalComponent } from "./simple-modal.component";
 
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: "page-home",
+  templateUrl: "home.html"
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController) {
-
+  constructor(public modalCtrl: ModalController) {}
+  openModal() {
+    // `Error: No component factory found for SimpleModalComponent.` occurs
+    this.modalCtrl.create(SimpleModalComponent).present();
   }
-
 }
